@@ -18,6 +18,10 @@
         justify-content: center;
         flex-direction: column;
       }
+
+      .feat {
+        padding-top: 200px;
+      }
     }
 
     @media (min-width: 680px) {
@@ -69,7 +73,7 @@
 
   <section id="features">
     <div class="container mt-5">
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg- feat">
         <div class="col d-flex align-items-start">
           <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -108,12 +112,17 @@
           
         <div class="col d-flex align-items-start">
           <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <img src="./images/website.png" alt="Bootstrap Themes" height="30" loading="lazy">
+            <img src="./images/website.png" alt="Bootstrap Themes" height="25" loading="lazy">
           </div>
             
           <div>
             <h3 class="fs-2 text-body-emphasis">Web-App</h3>
-            
+            <a href="./public/webapp.html" class="icon-link">
+              Web-App für Chromium Browser einrichten
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </a> 
           </div>
         </div>
       </div>
