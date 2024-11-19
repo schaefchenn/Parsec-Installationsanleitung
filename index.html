@@ -20,14 +20,55 @@
       }
 
       .feat {
-        padding-top: 200px;
+        flex-direction: column;
+      }
+
+      .contfeat {
+        margin: 0% 20%;
+        padding: 7% 0%
       }
     }
 
-    @media (min-width: 680px) {
+    @media (min-width:981px) and (max-width:1080px){
       .heroIMG2{
         display: none;
       }
+    
+      .feat {
+        flex-direction: column;
+      }
+
+      .contfeat {
+        justify-content: center;
+        padding: 7% 0%
+      }
+    }
+
+    @media (min-width:681px) and (max-width:990px){
+
+      .heroIMG2{
+        display: none;
+      }
+    
+      .feat {
+        flex-direction: column;
+      }
+
+      .contfeat {
+        justify-content: center;
+        padding: 7% 0%
+      }
+
+    }
+
+    @media (min-width: 1081px) {
+      .heroIMG2{
+        display: none;
+      }
+    }
+
+    .feat {
+      display: flex;
     }
 
     .icon-square {
@@ -35,6 +76,7 @@
       height: 3rem;
       border-radius: 0.75rem;
     }
+
   </style>
 </head>
 
@@ -73,8 +115,8 @@
 
   <section id="features">
     <div class="container mt-5">
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg- feat">
-        <div class="col d-flex align-items-start">
+      <div class="feat g-4 py-5">
+        <div class="col d-flex align-items-start contfeat">
           <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
               class="bi bi-apple mb-1" viewBox="0 0 16 16">
@@ -94,7 +136,7 @@
           </div>
         </div>
           
-        <div class="col d-flex align-items-start">
+        <div class="col d-flex align-items-start contfeat">
           <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M.2 298.669L0 90.615l256.007-34.76v242.814H.201zM298.658 49.654L639.905-.012v298.681H298.657V49.654zM640 341.331l-.071 298.681L298.669 592V341.332h341.33zM255.983 586.543L.189 551.463v-210.18h255.794v245.26z"/></svg>
           </div>
@@ -110,7 +152,7 @@
           </div>
         </div>
           
-        <div class="col d-flex align-items-start">
+        <div class="col d-flex align-items-start contfeat webfeat">
           <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
             <img src="./images/website.png" alt="Bootstrap Themes" height="25" loading="lazy">
           </div>
@@ -118,7 +160,7 @@
           <div>
             <h3 class="fs-2 text-body-emphasis">Web-App</h3>
             <a href="./public/webapp.html" class="icon-link">
-              Web-App für Chromium Browser einrichten
+              zur Installationsanleitung
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
               </svg>
